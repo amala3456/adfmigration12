@@ -1,0 +1,12 @@
+{
+	"name": "DS_LKUP_MAXVALUE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_LKUP_MAXVALUE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
