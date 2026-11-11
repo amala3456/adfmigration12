@@ -1,0 +1,15 @@
+{
+	"name": "adfmarineproject",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e08c0dc5-141d-405e-b534-86321b8d13cc",
+		"tenantId": "5555493b-dc49-4ef3-9a3a-1b50a4e1eec0"
+	}
+}
