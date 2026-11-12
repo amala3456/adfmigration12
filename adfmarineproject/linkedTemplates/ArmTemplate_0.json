@@ -718,7 +718,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "LS_SQLSERVER_WATERMRK",
+					"referenceName": "LS_SQL_WATERMRKMARINE",
 					"type": "LinkedServiceReference"
 				},
 				"parameters": {
@@ -744,7 +744,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/LS_SQLSERVER_WATERMRK')]"
+				"[concat(variables('factoryId'), '/linkedServices/LS_SQL_WATERMRKMARINE')]"
 			]
 		}
 	]
