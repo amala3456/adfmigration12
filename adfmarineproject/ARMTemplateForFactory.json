@@ -607,7 +607,7 @@
 							"value": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
 							"type": "Expression"
 						},
-						"fileSystem": "ormarine"
+						"fileSystem": "marineorg"
 					},
 					"compressionCodec": "snappy"
 				},
