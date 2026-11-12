@@ -25,7 +25,10 @@
 							"type": "String"
 						},
 						"TableSchema": {
-							"value": "@pipeline().parameters.TableSchema",
+							"value": {
+								"value": "@pipeline().parameters.TableSchema",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"WatermarkColumn": {
