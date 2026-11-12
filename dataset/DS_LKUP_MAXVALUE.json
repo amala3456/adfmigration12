@@ -2,7 +2,7 @@
 	"name": "DS_LKUP_MAXVALUE",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_LKUP_MAXVALUE",
+			"referenceName": "LS_SQLSERVER_WATERMRK",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
