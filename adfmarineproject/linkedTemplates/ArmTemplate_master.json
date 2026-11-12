@@ -11,6 +11,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"DS_ADLS_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DS_ADLS_PARQUET'"
+		},
+		"DS_SQL_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'DS_SQL_PARQUET'"
+		},
 		"DS_SQL_WATERMRK_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'DS_SQL_WATERMRK'"
@@ -27,6 +35,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_LKUP_MAXVALUE'"
 		},
+		"LS_ONPREMISE_SQLSERVER_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_ONPREMISE_SQLSERVER'"
+		},
 		"LS_SINK_PARGUET_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SINK_PARGUET'"
@@ -38,6 +50,10 @@
 		"LS_SQLSERVER_WATERMRK_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_SQLSERVER_WATERMRK'"
+		},
+		"LS_SQLTABLE_PARQUET1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQLTABLE_PARQUET1'"
 		},
 		"LS_SQL_WATERMRK_password": {
 			"type": "secureString",
@@ -51,22 +67,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_SqlServer1'"
 		},
-		"LS_SQLTABLE_PARQUET1_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'LS_SQLTABLE_PARQUET1'"
-		},
-		"DS_SQL_PARQUET_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'DS_SQL_PARQUET'"
-		},
-		"DS_ADLS_PARQUET_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'DS_ADLS_PARQUET'"
-		},
-		"LS_ONPREMISE_SQLSERVER_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'LS_ONPREMISE_SQLSERVER'"
-		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevsink12.dfs.core.windows.net/"
@@ -74,6 +74,14 @@
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://keyvaultmarine.vault.azure.net/"
+		},
+		"DS_ADLS_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevmarineproject.dfs.core.windows.net/"
+		},
+		"DS_SQL_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevmarineproject.dfs.core.windows.net/"
 		},
 		"DS_SQL_WATERMRK_properties_typeProperties_server": {
 			"type": "string",
@@ -123,6 +131,18 @@
 			"type": "string",
 			"defaultValue": "Amalalovin"
 		},
+		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost\\SQLEXPRESS"
+		},
+		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "vsqlmigration"
+		},
+		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amalalovin"
+		},
 		"LS_SINK_PARGUET_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevsink12.dfs.core.windows.net/"
@@ -140,6 +160,18 @@
 			"defaultValue": "vsqlmigration"
 		},
 		"LS_SQLSERVER_WATERMRK_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amalalovin"
+		},
+		"LS_SQLTABLE_PARQUET1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQLTABLE_PARQUET1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "vsqlmigration"
+		},
+		"LS_SQLTABLE_PARQUET1_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Amalalovin"
 		},
@@ -179,38 +211,6 @@
 			"type": "string",
 			"defaultValue": "Amalalovin"
 		},
-		"LS_SQLTABLE_PARQUET1_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "localhost\\SQLEXPRESS"
-		},
-		"LS_SQLTABLE_PARQUET1_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "vsqlmigration"
-		},
-		"LS_SQLTABLE_PARQUET1_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "Amalalovin"
-		},
-		"DS_SQL_PARQUET_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adlsdevmarineproject.dfs.core.windows.net/"
-		},
-		"DS_ADLS_PARQUET_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adlsdevmarineproject.dfs.core.windows.net/"
-		},
-		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "localhost\\SQLEXPRESS"
-		},
-		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "vsqlmigration"
-		},
-		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "Amalalovin"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -241,17 +241,17 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"DS_ADLS_PARQUET_accountKey": {
+						"value": "[parameters('DS_ADLS_PARQUET_accountKey')]"
+					},
+					"DS_SQL_PARQUET_accountKey": {
+						"value": "[parameters('DS_SQL_PARQUET_accountKey')]"
+					},
 					"LS_SINK_PARGUET_accountKey": {
 						"value": "[parameters('LS_SINK_PARGUET_accountKey')]"
 					},
 					"LS_SOURCE_CSV_accountKey": {
 						"value": "[parameters('LS_SOURCE_CSV_accountKey')]"
-					},
-					"DS_SQL_PARQUET_accountKey": {
-						"value": "[parameters('DS_SQL_PARQUET_accountKey')]"
-					},
-					"DS_ADLS_PARQUET_accountKey": {
-						"value": "[parameters('DS_ADLS_PARQUET_accountKey')]"
 					},
 					"DS_SQL_WATERMRK_password": {
 						"value": "[parameters('DS_SQL_WATERMRK_password')]"
@@ -265,8 +265,14 @@
 					"LS_LKUP_MAXVALUE_password": {
 						"value": "[parameters('LS_LKUP_MAXVALUE_password')]"
 					},
+					"LS_ONPREMISE_SQLSERVER_password": {
+						"value": "[parameters('LS_ONPREMISE_SQLSERVER_password')]"
+					},
 					"LS_SQLSERVER_WATERMRK_password": {
 						"value": "[parameters('LS_SQLSERVER_WATERMRK_password')]"
+					},
+					"LS_SQLTABLE_PARQUET1_password": {
+						"value": "[parameters('LS_SQLTABLE_PARQUET1_password')]"
 					},
 					"LS_SQL_WATERMRK_password": {
 						"value": "[parameters('LS_SQL_WATERMRK_password')]"
@@ -277,29 +283,23 @@
 					"LS_SqlServer1_password": {
 						"value": "[parameters('LS_SqlServer1_password')]"
 					},
-					"LS_SQLTABLE_PARQUET1_password": {
-						"value": "[parameters('LS_SQLTABLE_PARQUET1_password')]"
-					},
-					"LS_ONPREMISE_SQLSERVER_password": {
-						"value": "[parameters('LS_ONPREMISE_SQLSERVER_password')]"
-					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 					},
+					"DS_ADLS_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('DS_ADLS_PARQUET_properties_typeProperties_url')]"
+					},
+					"DS_SQL_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('DS_SQL_PARQUET_properties_typeProperties_url')]"
+					},
 					"LS_SINK_PARGUET_properties_typeProperties_url": {
 						"value": "[parameters('LS_SINK_PARGUET_properties_typeProperties_url')]"
 					},
 					"LS_SOURCE_CSV_properties_typeProperties_url": {
 						"value": "[parameters('LS_SOURCE_CSV_properties_typeProperties_url')]"
-					},
-					"DS_SQL_PARQUET_properties_typeProperties_url": {
-						"value": "[parameters('DS_SQL_PARQUET_properties_typeProperties_url')]"
-					},
-					"DS_ADLS_PARQUET_properties_typeProperties_url": {
-						"value": "[parameters('DS_ADLS_PARQUET_properties_typeProperties_url')]"
 					},
 					"DS_SQL_WATERMRK_properties_typeProperties_server": {
 						"value": "[parameters('DS_SQL_WATERMRK_properties_typeProperties_server')]"
@@ -337,6 +337,15 @@
 					"LS_LKUP_MAXVALUE_properties_typeProperties_userName": {
 						"value": "[parameters('LS_LKUP_MAXVALUE_properties_typeProperties_userName')]"
 					},
+					"LS_ONPREMISE_SQLSERVER_properties_typeProperties_server": {
+						"value": "[parameters('LS_ONPREMISE_SQLSERVER_properties_typeProperties_server')]"
+					},
+					"LS_ONPREMISE_SQLSERVER_properties_typeProperties_database": {
+						"value": "[parameters('LS_ONPREMISE_SQLSERVER_properties_typeProperties_database')]"
+					},
+					"LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName": {
+						"value": "[parameters('LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName')]"
+					},
 					"LS_SQLSERVER_WATERMRK_properties_typeProperties_server": {
 						"value": "[parameters('LS_SQLSERVER_WATERMRK_properties_typeProperties_server')]"
 					},
@@ -345,6 +354,15 @@
 					},
 					"LS_SQLSERVER_WATERMRK_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SQLSERVER_WATERMRK_properties_typeProperties_userName')]"
+					},
+					"LS_SQLTABLE_PARQUET1_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQLTABLE_PARQUET1_properties_typeProperties_server')]"
+					},
+					"LS_SQLTABLE_PARQUET1_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQLTABLE_PARQUET1_properties_typeProperties_database')]"
+					},
+					"LS_SQLTABLE_PARQUET1_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQLTABLE_PARQUET1_properties_typeProperties_userName')]"
 					},
 					"LS_SQL_WATERMRK_properties_typeProperties_server": {
 						"value": "[parameters('LS_SQL_WATERMRK_properties_typeProperties_server')]"
@@ -372,24 +390,6 @@
 					},
 					"LS_SqlServer1_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SqlServer1_properties_typeProperties_userName')]"
-					},
-					"LS_SQLTABLE_PARQUET1_properties_typeProperties_server": {
-						"value": "[parameters('LS_SQLTABLE_PARQUET1_properties_typeProperties_server')]"
-					},
-					"LS_SQLTABLE_PARQUET1_properties_typeProperties_database": {
-						"value": "[parameters('LS_SQLTABLE_PARQUET1_properties_typeProperties_database')]"
-					},
-					"LS_SQLTABLE_PARQUET1_properties_typeProperties_userName": {
-						"value": "[parameters('LS_SQLTABLE_PARQUET1_properties_typeProperties_userName')]"
-					},
-					"LS_ONPREMISE_SQLSERVER_properties_typeProperties_server": {
-						"value": "[parameters('LS_ONPREMISE_SQLSERVER_properties_typeProperties_server')]"
-					},
-					"LS_ONPREMISE_SQLSERVER_properties_typeProperties_database": {
-						"value": "[parameters('LS_ONPREMISE_SQLSERVER_properties_typeProperties_database')]"
-					},
-					"LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName": {
-						"value": "[parameters('LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName')]"
 					}
 				}
 			},

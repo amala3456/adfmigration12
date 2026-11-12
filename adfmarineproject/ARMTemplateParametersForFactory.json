@@ -8,6 +8,12 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"DS_ADLS_PARQUET_accountKey": {
+			"value": ""
+		},
+		"DS_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
 		"DS_SQL_WATERMRK_password": {
 			"value": ""
 		},
@@ -20,6 +26,9 @@
 		"LS_LKUP_MAXVALUE_password": {
 			"value": ""
 		},
+		"LS_ONPREMISE_SQLSERVER_password": {
+			"value": ""
+		},
 		"LS_SINK_PARGUET_accountKey": {
 			"value": ""
 		},
@@ -27,6 +36,9 @@
 			"value": ""
 		},
 		"LS_SQLSERVER_WATERMRK_password": {
+			"value": ""
+		},
+		"LS_SQLTABLE_PARQUET1_password": {
 			"value": ""
 		},
 		"LS_SQL_WATERMRK_password": {
@@ -38,23 +50,17 @@
 		"LS_SqlServer1_password": {
 			"value": ""
 		},
-		"LS_SQLTABLE_PARQUET1_password": {
-			"value": ""
-		},
-		"DS_SQL_PARQUET_accountKey": {
-			"value": ""
-		},
-		"DS_ADLS_PARQUET_accountKey": {
-			"value": ""
-		},
-		"LS_ONPREMISE_SQLSERVER_password": {
-			"value": ""
-		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsdevsink12.dfs.core.windows.net/"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://keyvaultmarine.vault.azure.net/"
+		},
+		"DS_ADLS_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevmarineproject.dfs.core.windows.net/"
+		},
+		"DS_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevmarineproject.dfs.core.windows.net/"
 		},
 		"DS_SQL_WATERMRK_properties_typeProperties_server": {
 			"value": "localhost\\SQLEXPRESS"
@@ -92,6 +98,15 @@
 		"LS_LKUP_MAXVALUE_properties_typeProperties_userName": {
 			"value": "Amalalovin"
 		},
+		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_database": {
+			"value": "vsqlmigration"
+		},
+		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName": {
+			"value": "Amalalovin"
+		},
 		"LS_SINK_PARGUET_properties_typeProperties_url": {
 			"value": "https://adlsdevsink12.dfs.core.windows.net/"
 		},
@@ -105,6 +120,15 @@
 			"value": "vsqlmigration"
 		},
 		"LS_SQLSERVER_WATERMRK_properties_typeProperties_userName": {
+			"value": "Amalalovin"
+		},
+		"LS_SQLTABLE_PARQUET1_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQLTABLE_PARQUET1_properties_typeProperties_database": {
+			"value": "vsqlmigration"
+		},
+		"LS_SQLTABLE_PARQUET1_properties_typeProperties_userName": {
 			"value": "Amalalovin"
 		},
 		"LS_SQL_WATERMRK_properties_typeProperties_server": {
@@ -132,30 +156,6 @@
 			"value": "AdventureWorks2025"
 		},
 		"LS_SqlServer1_properties_typeProperties_userName": {
-			"value": "Amalalovin"
-		},
-		"LS_SQLTABLE_PARQUET1_properties_typeProperties_server": {
-			"value": "localhost\\SQLEXPRESS"
-		},
-		"LS_SQLTABLE_PARQUET1_properties_typeProperties_database": {
-			"value": "vsqlmigration"
-		},
-		"LS_SQLTABLE_PARQUET1_properties_typeProperties_userName": {
-			"value": "Amalalovin"
-		},
-		"DS_SQL_PARQUET_properties_typeProperties_url": {
-			"value": "https://adlsdevmarineproject.dfs.core.windows.net/"
-		},
-		"DS_ADLS_PARQUET_properties_typeProperties_url": {
-			"value": "https://adlsdevmarineproject.dfs.core.windows.net/"
-		},
-		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_server": {
-			"value": "localhost\\SQLEXPRESS"
-		},
-		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_database": {
-			"value": "vsqlmigration"
-		},
-		"LS_ONPREMISE_SQLSERVER_properties_typeProperties_userName": {
 			"value": "Amalalovin"
 		}
 	}
