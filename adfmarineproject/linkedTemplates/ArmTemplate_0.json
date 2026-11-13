@@ -661,7 +661,10 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"storedProcedureName": "[[dbo].[UpdateWaterMark]",
+							"storedProcedureName": {
+								"value": "[[dbo].[UpdateWatermark]",
+								"type": "Expression"
+							},
 							"storedProcedureParameters": {
 								"TableName": {
 									"value": {
@@ -687,7 +690,7 @@
 							}
 						},
 						"linkedServiceName": {
-							"referenceName": "LS_SQL_WATERMRKMARINE",
+							"referenceName": "LS_ONPREMISE_SQLSERVER",
 							"type": "LinkedServiceReference"
 						}
 					}
@@ -709,7 +712,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/LS_SQL_WATERMRKMARINE')]"
+				"[concat(variables('factoryId'), '/linkedServices/LS_ONPREMISE_SQLSERVER')]"
 			]
 		},
 		{
