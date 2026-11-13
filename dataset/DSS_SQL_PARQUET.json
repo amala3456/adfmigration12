@@ -23,7 +23,7 @@
 					"value": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
 					"type": "Expression"
 				},
-				"fileSystem": "omarine"
+				"fileSystem": "marineorg"
 			},
 			"compressionCodec": "snappy"
 		},
