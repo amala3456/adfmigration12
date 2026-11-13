@@ -607,7 +607,7 @@
 							"value": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
 							"type": "Expression"
 						},
-						"fileSystem": "omarine"
+						"fileSystem": "marineorg"
 					},
 					"compressionCodec": "snappy"
 				},
@@ -623,7 +623,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "LS_SQL_WATERMRKMARINE",
+					"referenceName": "LS_LKUP_MAXVALUE",
 					"type": "LinkedServiceReference"
 				},
 				"parameters": {
@@ -649,7 +649,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/LS_SQL_WATERMRKMARINE')]"
+				"[concat(variables('factoryId'), '/linkedServices/LS_LKUP_MAXVALUE')]"
 			]
 		},
 		{
