@@ -718,7 +718,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "LS_LKUP_MAXVALUE",
+					"referenceName": "LS_SQL_WATERMRKMARINE",
 					"type": "LinkedServiceReference"
 				},
 				"parameters": {
@@ -744,7 +744,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/LS_LKUP_MAXVALUE')]"
+				"[concat(variables('factoryId'), '/linkedServices/LS_SQL_WATERMRKMARINE')]"
 			]
 		}
 	]
