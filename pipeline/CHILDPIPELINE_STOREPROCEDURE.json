@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[UpdateWatermark]",
+					"storedProcedureName": "[dbo].[UpdateWaterMark]",
 					"storedProcedureParameters": {
 						"TableName": {
 							"value": {
@@ -41,7 +41,7 @@
 					}
 				},
 				"linkedServiceName": {
-					"referenceName": "LS_ONPREMISE_SQLSERVER",
+					"referenceName": "LS_SQL_WATERMRKMARINE",
 					"type": "LinkedServiceReference"
 				}
 			}
